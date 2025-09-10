@@ -1,30 +1,30 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'JOEY FLORES',
+  author: 'Joey Flores',
+  headerTitle: 'JOEY FLORES',
+  description: 'a little bit of tech, running, news, and anything else I find fascinating.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
+  //mastodon: 'https://mastodon.social/@mastodonuser',
+  email: 'joeyflores74@gmail.com',
+  github: 'https://github.com/joeyaflores',
   x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
+  //facebook: 'https://facebook.com',
+  //youtube: 'https://youtube.com',
+  linkedin: 'https://www.linkedin.com/in/joeyaflores',
+  //threads: 'https://www.threads.net',
+  instagram: 'https://www.instagram.com/joeyaflrs',
+  //medium: 'https://medium.com',
+  //bluesky: 'https://bsky.app/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -49,11 +49,11 @@ const siteMetadata = {
     //   googleAnalyticsId: '', // e.g. G-XXXXXXX
     // },
   },
-  newsletter: {
-    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
-    // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
-  },
+ // newsletter: {
+ //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
+ //   // Please add your .env file and modify it according to your selection
+ //   provider: 'buttondown',
+ // },
   comments: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
