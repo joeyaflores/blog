@@ -1,11 +1,12 @@
-import { NewsletterAPI } from 'pliny/newsletter'
-import siteMetadata from '@/data/siteMetadata'
+// app/api/newsletter/route.ts
 
 export const dynamic = 'force-static'
 
-const handler = NewsletterAPI({
-  // @ts-ignore
-  provider: siteMetadata.newsletter.provider,
-})
+// Temporarily disable newsletter API
+export async function GET() {
+  return new Response('Newsletter API disabled', { status: 200 })
+}
 
-export { handler as GET, handler as POST }
+export async function POST() {
+  return new Response('Newsletter API disabled', { status: 200 })
+}
