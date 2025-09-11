@@ -20,6 +20,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/joeyaflores',
   //threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com/joeyaflrs',
+  strava: 'https://strava.app.link/ldAfmPsgAWb',
   //medium: 'https://medium.com',
   //bluesky: 'https://bsky.app/',
   locale: 'en-US',
