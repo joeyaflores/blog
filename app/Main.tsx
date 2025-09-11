@@ -6,6 +6,7 @@ import CurrentlyStatus from '@/components/CurrentlyStatus'
 import RecentDiscoveries from '@/components/RecentDiscoveries'
 import ToolsShowcase from '@/components/ToolsShowcase'
 import CareerTimeline from '@/components/CareerTimeline'
+import StravaWidget from '@/components/StravaWidget'
 import BlogTransition from '@/components/BlogTransition'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
@@ -23,11 +24,8 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
           <CurrentlyStatus />
-          <ToolsShowcase />
-          <CareerTimeline />
         </div>
-        <BlogTransition />
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul id="blog-posts" className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
             const { slug, date, title, summary, tags } = post
@@ -90,6 +88,15 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+
+      {/* Personal showcase section - moved below blog posts */}
+      <div className="mt-6 divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pt-2 pb-8 md:space-y-5">
+          <ToolsShowcase />
+          <CareerTimeline />
+        </div>
+      </div>
+
       {siteMetadata.newsletter?.provider && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
