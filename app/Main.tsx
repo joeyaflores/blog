@@ -5,6 +5,7 @@ import DynamicStats from '@/components/DynamicStats'
 import CurrentlyStatus from '@/components/CurrentlyStatus'
 import RecentDiscoveries from '@/components/RecentDiscoveries'
 import ToolsShowcase from '@/components/ToolsShowcase'
+import CareerTimeline from '@/components/CareerTimeline'
 import BlogTransition from '@/components/BlogTransition'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
@@ -23,6 +24,7 @@ export default function Home({ posts }) {
           </p>
           <CurrentlyStatus />
           <ToolsShowcase />
+          <CareerTimeline />
         </div>
         <BlogTransition />
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
