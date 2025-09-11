@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'JOEY FLORES',
   author: 'Joey Flores',
   headerTitle: 'JOEY FLORES',
-  description: 'a little bit of tech, running, news, and anything else I find fascinating.',
+  description: 'a little bit of tech, running, news, sports, and anything else I find fascinating.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

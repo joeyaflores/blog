@@ -1,6 +1,11 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import TypewriterHeading from '@/components/TypewriterHeading'
+import DynamicStats from '@/components/DynamicStats'
+import CurrentlyStatus from '@/components/CurrentlyStatus'
+import RecentDiscoveries from '@/components/RecentDiscoveries'
+import ToolsShowcase from '@/components/ToolsShowcase'
+import BlogTransition from '@/components/BlogTransition'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
@@ -16,7 +21,10 @@ export default function Home({ posts }) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          <CurrentlyStatus />
+          <ToolsShowcase />
         </div>
+        <BlogTransition />
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
