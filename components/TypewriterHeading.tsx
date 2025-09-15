@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Typewriter from 'typewriter-effect'
 
-const words = ['friend!', 'reader!', 'runner!', 'thinker!', 'snooper!']
+const words = ['builder', 'learner', 'runner', 'seeker', 'friend']
 
 export default function TypewriterHeading() {
   const [mounted, setMounted] = useState(false)
